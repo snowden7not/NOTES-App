@@ -8,9 +8,9 @@ node_modules
 git init
 git add .
 git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/snowden7not/NOTES-Back
-git push -u origin main
+git branch -M main<br/>
+git remote add origin https://github.com/snowden7not/NOTES-Back.git<br/>
+git push -u origin main<br/>
 
 set respo visibility to public <br/>
 
