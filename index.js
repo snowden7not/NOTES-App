@@ -142,7 +142,7 @@ app.post('/forgot-password', async (req, res) => {
       },
     });
 
-    const link=`https://notes-front-1.onrender.com/${user._id}/${token}`
+    const link=`https://notes-front-1.onrender.com/reset-password/${user._id}/${token}`
     //console.log(link); //comment it
 
     const mailOptions = {
