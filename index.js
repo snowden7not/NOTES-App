@@ -142,7 +142,7 @@ app.post('/forgot-password', async (req, res) => {
       },
     });
 
-    const link=`http://localhost:3000/reset-password/${user._id}/${token}`
+    const link=`https://notes-front-1.onrender.com/${user._id}/${token}`
     //console.log(link); //comment it
 
     const mailOptions = {
@@ -156,7 +156,7 @@ app.post('/forgot-password', async (req, res) => {
             <p>To reset your password, please click on the button below:</p>
             <a href="${link}" style="background-color: #4CAF50; color: white; padding: 10px 20px; text-align: center; text-decoration: none; display: inline-block; font-size: 16px;">Reset Password</a>
             <p>If you did not request a password reset, please ignore this email.</p>
-            <p>This password reset link will expire in 24 hours for security purposes.</p>
+            <p>This password reset link will expire in 5 minutes for security purposes.</p>
             <p>Sincerely,</p>
             <p>The NOTES Team</p>
         `,
