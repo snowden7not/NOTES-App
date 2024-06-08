@@ -145,7 +145,8 @@ app.post('/forgot-password', async (req, res) => {
     //const link=`http://localhost:3000/reset-password/${user._id}/${token}`
     //const link=`https://notes-front-1.onrender.com/reset-password/${user._id}/${token}`
       
-    const baseUrl = 'https://notes-front-1.onrender.com'; // Deployed frontend URL
+    //const baseUrl = 'https://notes-front-1.onrender.com'; // Deployed frontend URL
+    const baseUrl = 'https://notes-front-eight.vercel.app/'; // Deployed frontend URL
     const link = `${baseUrl}/reset-password/${user._id}/${token}`;
 
     //console.log(link); //comment it
