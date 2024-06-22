@@ -30,9 +30,9 @@ app.use(cors({
 }));
 
 
-//app.get("/",(req,res)=>{
-//    res.json({data:"hello bs"});
-//});
+app.get("/",(req,res)=>{
+    res.status(200).json({data:"Backend is working. "});
+});
 
 
 //create account
